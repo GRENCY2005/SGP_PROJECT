@@ -1,0 +1,466 @@
+2025-03-18 23:06:42,539 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-18 23:06:42,539 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-18 23:06:42,542 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:06:43,224 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:06:43,226 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:09:23,295 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:09:23] "GET / HTTP/1.1" 200 -
+2025-03-18 23:09:26,936 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:09:26] "GET /login HTTP/1.1" 200 -
+2025-03-18 23:09:32,455 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:09:32] "GET /login HTTP/1.1" 200 -
+2025-03-18 23:09:47,614 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:09:47] "GET /login HTTP/1.1" 200 -
+2025-03-18 23:10:01,618 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:10:01] "POST /login HTTP/1.1" 200 -
+2025-03-18 23:10:09,617 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:10:09] "POST /login HTTP/1.1" 200 -
+2025-03-18 23:10:16,863 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:10:16] "POST /login HTTP/1.1" 200 -
+2025-03-18 23:10:26,424 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:10:26] "GET /register HTTP/1.1" 200 -
+2025-03-18 23:12:05,160 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:12:05] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2025-03-18 23:12:05,304 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:12:05] "GET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-03-18 23:12:05,311 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:12:05] "GET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-03-18 23:12:05,367 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:12:05] "GET /register?__debugger__=yes&cmd=resource&f=console.png&s=FetwDmEABrKGWe0UMiIG HTTP/1.1" 200 -
+2025-03-18 23:12:05,376 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:12:05] "GET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-03-18 23:13:31,006 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-18 23:13:31,145 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:13:32,024 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:13:32,026 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:14:17,577 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-18 23:14:17,688 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:14:18,477 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:14:18,479 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:14:26,838 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-18 23:14:26,966 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:14:27,777 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:14:27,780 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:20:12,574 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-18 23:20:12,688 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:20:13,628 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:20:13,631 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:21:05,502 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-18 23:21:05,673 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:21:08,219 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:21:08,226 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:21:20,446 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:21:20] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-03-18 23:21:20,462 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:21:20] "GET /register HTTP/1.1" 200 -
+2025-03-18 23:21:27,631 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:21:27] "GET /login HTTP/1.1" 200 -
+2025-03-18 23:21:40,361 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:21:40] "GET /register HTTP/1.1" 200 -
+2025-03-18 23:21:47,618 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:21:47] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-03-18 23:21:47,626 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:21:47] "GET /register HTTP/1.1" 200 -
+2025-03-18 23:21:56,054 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:21:56] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-03-18 23:21:56,064 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:21:56] "GET /register HTTP/1.1" 200 -
+2025-03-18 23:21:58,476 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:21:58] "GET /login HTTP/1.1" 200 -
+2025-03-18 23:22:00,484 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:22:00] "GET /register HTTP/1.1" 200 -
+2025-03-18 23:22:03,292 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:22:03] "GET /register HTTP/1.1" 200 -
+2025-03-18 23:22:09,976 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-18 23:22:09,976 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-18 23:22:09,978 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:22:10,741 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:22:10,743 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:22:18,384 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:22:18] "GET /register HTTP/1.1" 200 -
+2025-03-18 23:22:25,624 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:22:25] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-03-18 23:22:25,631 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:22:25] "GET /register HTTP/1.1" 200 -
+2025-03-18 23:23:27,211 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-18 23:23:27,213 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-18 23:23:27,359 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:23:27,362 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:23:28,387 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:23:28,390 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:23:28,390 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:23:28,393 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:23:49,532 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-18 23:23:49,533 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-18 23:23:49,538 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:23:50,362 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:23:50,364 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:24:08,257 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:24:08] "GET /register HTTP/1.1" 200 -
+2025-03-18 23:24:08,494 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:24:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-18 23:24:27,498 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:24:27] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2025-03-18 23:24:27,783 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:24:27] "GET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-03-18 23:24:27,818 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:24:27] "GET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-03-18 23:24:28,172 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:24:28] "GET /register?__debugger__=yes&cmd=resource&f=console.png&s=YWmYUZgBPxFpdo4ym7RS HTTP/1.1" 200 -
+2025-03-18 23:24:28,436 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:24:28] "GET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-03-18 23:25:09,576 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-18 23:25:09,579 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-18 23:25:09,581 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-18 23:25:09,738 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:25:09,742 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:25:09,748 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:25:10,694 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:25:10,697 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:25:10,708 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:25:10,712 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:25:10,715 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:25:10,719 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:25:19,081 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-18 23:25:19,091 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-18 23:25:19,098 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-18 23:25:19,226 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:25:19,232 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:25:19,232 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:25:20,026 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:25:20,029 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:25:20,041 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:25:20,044 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:25:20,055 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:25:20,058 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:25:33,483 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-18 23:25:33,483 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-18 23:25:33,485 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:25:34,318 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:25:34,321 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:25:45,347 - __main__ - INFO - New user registered: hemangipopat2005@gmail.com
+2025-03-18 23:25:45,348 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:25:45] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-03-18 23:25:45,359 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:25:45] "GET /login HTTP/1.1" 200 -
+2025-03-18 23:25:59,588 - __main__ - INFO - User logged in: hemangipopat2005@gmail.com
+2025-03-18 23:25:59,591 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:25:59] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-03-18 23:25:59,635 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:25:59] "GET /dashboard HTTP/1.1" 200 -
+2025-03-18 23:26:30,317 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:26:30] "GET /register HTTP/1.1" 200 -
+2025-03-18 23:26:43,682 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:26:43] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-03-18 23:26:43,694 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:26:43] "GET /register HTTP/1.1" 200 -
+2025-03-18 23:27:32,961 - __main__ - INFO - New user registered: savaliyagrency@gmail.com
+2025-03-18 23:27:32,964 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:27:32] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-03-18 23:27:32,974 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:27:32] "GET /login HTTP/1.1" 200 -
+2025-03-18 23:27:42,969 - __main__ - INFO - User logged in: savaliyagrency@gmail.com
+2025-03-18 23:27:42,975 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:27:42] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-03-18 23:27:43,004 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:27:43] "GET /dashboard HTTP/1.1" 200 -
+2025-03-18 23:29:19,848 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-18 23:29:19,850 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-18 23:29:19,999 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:29:20,001 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:29:20,464 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-18 23:29:20,469 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-18 23:29:20,643 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:29:20,647 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:29:20,969 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:29:20,972 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:29:20,987 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:29:20,991 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:29:21,549 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:29:21,551 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:29:21,564 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:29:21,567 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:29:28,366 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:29:28] "[32mPOST /verify-phone HTTP/1.1[0m" 302 -
+2025-03-18 23:29:28,382 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:29:28] "[35m[1mGET /dashboard HTTP/1.1[0m" 500 -
+2025-03-18 23:29:28,674 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:29:28] "GET /dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-03-18 23:29:28,710 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:29:28] "GET /dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-03-18 23:29:29,067 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:29:29] "GET /dashboard?__debugger__=yes&cmd=resource&f=console.png&s=rMMKcNGhI4qNO4h8Cuqu HTTP/1.1" 200 -
+2025-03-18 23:29:29,335 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:29:29] "GET /dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-03-18 23:29:43,048 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-18 23:29:43,097 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-18 23:29:43,104 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-18 23:29:43,117 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-18 23:29:43,218 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:29:43,284 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:29:43,291 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:29:43,297 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:29:44,171 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:29:44,175 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:29:44,224 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:29:44,228 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:29:44,238 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:29:44,243 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:29:44,256 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:29:44,259 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:30:06,929 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-18 23:30:06,929 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-18 23:30:06,932 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:30:07,674 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:30:07,676 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:32:29,871 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:32:29] "GET /login HTTP/1.1" 200 -
+2025-03-18 23:32:44,815 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:32:44] "POST /login HTTP/1.1" 200 -
+2025-03-18 23:32:59,929 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:32:59] "POST /login HTTP/1.1" 200 -
+2025-03-18 23:33:17,295 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:33:17] "POST /login HTTP/1.1" 200 -
+2025-03-18 23:33:21,741 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:33:21] "POST /login HTTP/1.1" 200 -
+2025-03-18 23:34:35,297 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:34:35] "GET /register HTTP/1.1" 200 -
+2025-03-18 23:35:32,435 - __main__ - INFO - New user registered: 23IT074@charusat.edu.in
+2025-03-18 23:35:32,436 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:35:32] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-03-18 23:35:32,443 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:35:32] "GET /login HTTP/1.1" 200 -
+2025-03-18 23:35:59,633 - __main__ - INFO - User logged in: 23IT074@charusat.edu.in
+2025-03-18 23:35:59,634 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:35:59] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-03-18 23:35:59,651 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:35:59] "GET /dashboard HTTP/1.1" 200 -
+2025-03-18 23:36:09,726 - __main__ - INFO - Phone verified for user: 23IT074@charusat.edu.in
+2025-03-18 23:36:09,728 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:36:09] "[32mPOST /verify-phone HTTP/1.1[0m" 302 -
+2025-03-18 23:36:10,021 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:36:10] "GET /dashboard HTTP/1.1" 200 -
+2025-03-18 23:39:10,243 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-18 23:39:10,243 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-18 23:39:10,245 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:39:10,891 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:39:10,893 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:39:20,054 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:39:20] "[32mPOST /verify-phone HTTP/1.1[0m" 302 -
+2025-03-18 23:39:20,070 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:39:20] "[35m[1mGET /dashboard HTTP/1.1[0m" 500 -
+2025-03-18 23:39:20,479 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:39:20] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-03-18 23:39:20,534 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:39:20] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-03-18 23:39:20,883 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:39:20] "GET /dashboard?__debugger__=yes&cmd=resource&f=console.png&s=JuUDnEEfM0u7SNk4SAgD HTTP/1.1" 200 -
+2025-03-18 23:39:21,150 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:39:21] "[36mGET /dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-03-18 23:40:35,265 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-18 23:40:35,397 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:40:36,025 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-18 23:40:36,030 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-18 23:40:36,034 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-18 23:40:36,193 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:40:36,205 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:40:36,211 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:40:36,274 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:40:36,278 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:40:36,993 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:40:36,996 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:40:37,014 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:40:37,017 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:40:37,024 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:40:37,027 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:40:48,777 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-18 23:40:48,894 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:40:49,624 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-18 23:40:49,629 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-18 23:40:49,634 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-18 23:40:49,737 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:40:49,741 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:40:49,775 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:40:49,795 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:40:49,802 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:40:50,521 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:40:50,524 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:40:50,548 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:40:50,551 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:40:50,557 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:40:50,561 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:41:22,136 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-18 23:41:22,136 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-18 23:41:22,137 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:41:22,812 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:41:22,815 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:41:33,936 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:41:33] "[32mGET /dashboard HTTP/1.1[0m" 302 -
+2025-03-18 23:41:33,952 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:41:33] "GET /login?next=/dashboard HTTP/1.1" 200 -
+2025-03-18 23:41:40,404 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:41:40] "GET /register HTTP/1.1" 200 -
+2025-03-18 23:41:46,569 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:41:46] "GET /login HTTP/1.1" 200 -
+2025-03-18 23:42:01,683 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:42:01] "POST /login HTTP/1.1" 200 -
+2025-03-18 23:42:19,885 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:42:19] "POST /login HTTP/1.1" 200 -
+2025-03-18 23:42:57,001 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-18 23:42:57,006 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-18 23:42:57,141 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:42:57,148 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:42:57,213 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-18 23:42:57,346 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:42:57,960 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:42:57,961 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:42:57,964 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:42:57,965 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:42:58,166 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:42:58,169 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:43:36,803 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-18 23:43:36,810 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-18 23:43:36,810 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-18 23:43:36,954 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:43:36,958 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:43:36,960 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:43:37,669 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:43:37,671 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:43:37,672 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:43:37,673 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:43:37,678 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:43:37,680 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:44:44,536 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-18 23:44:44,536 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-18 23:44:44,539 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:44:45,211 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:44:45,213 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:44:54,485 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:44:54] "[32mGET /dashboard HTTP/1.1[0m" 302 -
+2025-03-18 23:44:54,501 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:44:54] "GET /login?next=/dashboard HTTP/1.1" 200 -
+2025-03-18 23:45:12,326 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:45:12] "POST /login?next=/dashboard HTTP/1.1" 200 -
+2025-03-18 23:45:23,487 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:45:23] "GET /register HTTP/1.1" 200 -
+2025-03-18 23:45:48,746 - __main__ - INFO - New user registered: hemangipopat2005@gmail.com
+2025-03-18 23:45:48,747 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:45:48] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-03-18 23:45:48,846 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:45:48] "GET /login HTTP/1.1" 200 -
+2025-03-18 23:46:01,786 - __main__ - INFO - User logged in: hemangipopat2005@gmail.com
+2025-03-18 23:46:01,787 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:46:01] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-03-18 23:46:01,806 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:46:01] "GET /dashboard HTTP/1.1" 200 -
+2025-03-18 23:46:12,052 - __main__ - INFO - Phone verified for user: hemangipopat2005@gmail.com
+2025-03-18 23:46:12,057 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:46:12] "[32mPOST /verify-phone HTTP/1.1[0m" 302 -
+2025-03-18 23:46:12,361 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:46:12] "GET /dashboard HTTP/1.1" 200 -
+2025-03-18 23:47:23,038 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:47:23] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-03-18 23:47:23,044 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:47:23] "GET / HTTP/1.1" 200 -
+2025-03-18 23:47:26,808 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:47:26] "GET /login HTTP/1.1" 200 -
+2025-03-18 23:47:32,294 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:47:32] "GET /register HTTP/1.1" 200 -
+2025-03-18 23:47:50,458 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-18 23:47:50,458 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-18 23:47:50,460 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-18 23:47:50,467 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-18 23:47:50,649 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:47:50,658 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:47:50,660 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:47:50,679 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:47:51,488 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:47:51,489 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:47:51,491 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:47:51,492 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:47:51,498 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:47:51,500 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:47:51,503 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:47:51,506 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:47:54,693 - __main__ - INFO - New user registered: 23IT074@charusat.edu.in
+2025-03-18 23:47:54,694 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:47:54] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-03-18 23:47:54,706 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:47:54] "GET /login HTTP/1.1" 200 -
+2025-03-18 23:48:14,852 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:48:14] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-03-18 23:48:15,165 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:48:15] "GET /register HTTP/1.1" 200 -
+2025-03-18 23:49:09,970 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-18 23:49:09,978 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-18 23:49:09,981 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-18 23:49:09,985 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-18 23:49:10,120 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:49:10,122 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:49:10,127 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:49:10,133 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:49:10,819 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:49:10,821 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:49:10,822 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:49:10,822 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:49:10,824 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:49:10,824 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:49:10,825 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:49:10,827 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:50:42,989 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:50:42] "GET /login HTTP/1.1" 200 -
+2025-03-18 23:51:00,448 - __main__ - INFO - User logged in: 23IT074@charusat.edu.in
+2025-03-18 23:51:00,449 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:51:00] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-03-18 23:51:00,466 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:51:00] "GET /dashboard HTTP/1.1" 200 -
+2025-03-18 23:51:45,805 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:51:45] "[32mPOST /verify-phone HTTP/1.1[0m" 302 -
+2025-03-18 23:51:45,824 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:51:45] "GET /dashboard HTTP/1.1" 200 -
+2025-03-18 23:53:46,184 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-18 23:53:46,190 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-18 23:53:46,194 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-18 23:53:46,333 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:53:46,346 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:53:46,353 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:53:47,139 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:53:47,141 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:53:47,142 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:53:47,143 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:53:47,146 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:53:47,146 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:53:48,272 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-18 23:53:48,274 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-18 23:53:48,278 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-18 23:53:48,417 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:53:48,420 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:53:48,424 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:53:49,215 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:53:49,219 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:53:49,220 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:53:49,223 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:53:49,225 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:53:49,227 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:54:10,440 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-18 23:54:10,440 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-18 23:54:10,441 - werkzeug - INFO -  * Restarting with stat
+2025-03-18 23:54:11,068 - werkzeug - WARNING -  * Debugger is active!
+2025-03-18 23:54:11,070 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-18 23:54:22,931 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:54:22] "GET /dashboard HTTP/1.1" 200 -
+2025-03-18 23:54:37,367 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:54:37] "GET / HTTP/1.1" 200 -
+2025-03-18 23:55:26,897 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:55:26] "GET /login HTTP/1.1" 200 -
+2025-03-18 23:55:45,640 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:55:45] "GET /register HTTP/1.1" 200 -
+2025-03-18 23:56:08,905 - __main__ - INFO - User logged in: 23IT074@charusat.edu.in
+2025-03-18 23:56:08,906 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:56:08] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-03-18 23:56:09,060 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:56:09] "GET /dashboard HTTP/1.1" 200 -
+2025-03-18 23:56:24,805 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:56:24] "GET /register HTTP/1.1" 200 -
+2025-03-18 23:56:36,754 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:56:36] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-03-18 23:56:36,767 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:56:36] "GET /register HTTP/1.1" 200 -
+2025-03-18 23:56:48,297 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:56:48] "GET /login HTTP/1.1" 200 -
+2025-03-18 23:56:53,806 - __main__ - INFO - User logged in: hemangipopat2005@gmail.com
+2025-03-18 23:56:53,807 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:56:53] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-03-18 23:56:53,817 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:56:53] "GET /dashboard HTTP/1.1" 200 -
+2025-03-18 23:58:29,590 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:58:29] "GET /chatbot HTTP/1.1" 200 -
+2025-03-18 23:58:37,469 - __main__ - INFO - Chat message from HEMANGI POPAT : hi
+2025-03-18 23:58:37,471 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:58:37] "POST /chat HTTP/1.1" 200 -
+2025-03-18 23:59:29,423 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:59:29] "GET /chatbot HTTP/1.1" 200 -
+2025-03-18 23:59:34,402 - __main__ - INFO - Chat message from HEMANGI POPAT : who r u
+2025-03-18 23:59:34,403 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:59:34] "POST /chat HTTP/1.1" 200 -
+2025-03-18 23:59:43,733 - __main__ - INFO - Chat message from HEMANGI POPAT : who are you?
+2025-03-18 23:59:43,734 - werkzeug - INFO - 127.0.0.1 - - [18/Mar/2025 23:59:43] "POST /chat HTTP/1.1" 200 -
+2025-03-19 00:00:01,886 - __main__ - INFO - Chat message from HEMANGI POPAT : hi
+2025-03-19 00:00:01,888 - werkzeug - INFO - 127.0.0.1 - - [19/Mar/2025 00:00:01] "POST /chat HTTP/1.1" 200 -
+2025-03-19 00:01:44,089 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-19 00:01:44,117 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-19 00:01:44,125 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-19 00:01:44,354 - werkzeug - INFO -  * Restarting with stat
+2025-03-19 00:01:44,366 - werkzeug - INFO -  * Restarting with stat
+2025-03-19 00:01:44,369 - werkzeug - INFO -  * Restarting with stat
+2025-03-19 00:01:44,774 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-19 00:01:44,935 - werkzeug - INFO -  * Restarting with stat
+2025-03-19 00:01:45,117 - werkzeug - WARNING -  * Debugger is active!
+2025-03-19 00:01:45,120 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-19 00:01:45,121 - werkzeug - WARNING -  * Debugger is active!
+2025-03-19 00:01:45,124 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-19 00:01:45,131 - werkzeug - WARNING -  * Debugger is active!
+2025-03-19 00:01:45,134 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-19 00:01:45,608 - werkzeug - WARNING -  * Debugger is active!
+2025-03-19 00:01:45,610 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-19 00:01:51,924 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-19 00:01:52,036 - werkzeug - INFO -  * Restarting with stat
+2025-03-19 00:01:52,564 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-19 00:01:52,567 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-19 00:01:52,577 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-19 00:01:52,746 - werkzeug - INFO -  * Restarting with stat
+2025-03-19 00:01:52,751 - werkzeug - INFO -  * Restarting with stat
+2025-03-19 00:01:52,753 - werkzeug - INFO -  * Restarting with stat
+2025-03-19 00:01:52,910 - werkzeug - WARNING -  * Debugger is active!
+2025-03-19 00:01:52,913 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-19 00:01:53,606 - werkzeug - WARNING -  * Debugger is active!
+2025-03-19 00:01:53,610 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-19 00:01:53,613 - werkzeug - WARNING -  * Debugger is active!
+2025-03-19 00:01:53,616 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-19 00:01:53,621 - werkzeug - WARNING -  * Debugger is active!
+2025-03-19 00:01:53,625 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-19 00:02:29,831 - __main__ - INFO - Chat message from HEMANGI POPAT : "How do I verify my account?"
+2025-03-19 00:02:29,832 - werkzeug - INFO - 127.0.0.1 - - [19/Mar/2025 00:02:29] "POST /chat HTTP/1.1" 200 -
+2025-03-19 00:03:43,233 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-19 00:03:43,233 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-19 00:03:43,235 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-19 00:03:43,236 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-19 00:03:43,420 - werkzeug - INFO -  * Restarting with stat
+2025-03-19 00:03:43,432 - werkzeug - INFO -  * Restarting with stat
+2025-03-19 00:03:43,435 - werkzeug - INFO -  * Restarting with stat
+2025-03-19 00:03:43,438 - werkzeug - INFO -  * Restarting with stat
+2025-03-19 00:03:44,388 - werkzeug - WARNING -  * Debugger is active!
+2025-03-19 00:03:44,392 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-19 00:03:44,401 - werkzeug - WARNING -  * Debugger is active!
+2025-03-19 00:03:44,402 - werkzeug - WARNING -  * Debugger is active!
+2025-03-19 00:03:44,403 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-19 00:03:44,405 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-19 00:03:44,428 - werkzeug - WARNING -  * Debugger is active!
+2025-03-19 00:03:44,432 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-19 00:03:56,008 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-19 00:03:56,012 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-19 00:03:56,012 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-19 00:03:56,020 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-19 00:03:56,206 - werkzeug - INFO -  * Restarting with stat
+2025-03-19 00:03:56,215 - werkzeug - INFO -  * Restarting with stat
+2025-03-19 00:03:56,215 - werkzeug - INFO -  * Restarting with stat
+2025-03-19 00:03:56,217 - werkzeug - INFO -  * Restarting with stat
+2025-03-19 00:03:57,099 - werkzeug - WARNING -  * Debugger is active!
+2025-03-19 00:03:57,102 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-19 00:03:57,103 - werkzeug - WARNING -  * Debugger is active!
+2025-03-19 00:03:57,107 - werkzeug - WARNING -  * Debugger is active!
+2025-03-19 00:03:57,108 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-19 00:03:57,110 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-19 00:03:57,116 - werkzeug - WARNING -  * Debugger is active!
+2025-03-19 00:03:57,120 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-19 00:08:21,278 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-19 00:08:21,291 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-19 00:08:21,297 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-19 00:08:21,302 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Hemangi\\OneDrive\\Desktop\\DoJ_Website_Chatbot-main\\app.py', reloading
+2025-03-19 00:08:21,516 - werkzeug - INFO -  * Restarting with stat
+2025-03-19 00:08:21,519 - werkzeug - INFO -  * Restarting with stat
+2025-03-19 00:08:21,521 - werkzeug - INFO -  * Restarting with stat
+2025-03-19 00:08:21,526 - werkzeug - INFO -  * Restarting with stat
+2025-03-19 00:08:22,398 - werkzeug - WARNING -  * Debugger is active!
+2025-03-19 00:08:22,399 - werkzeug - WARNING -  * Debugger is active!
+2025-03-19 00:08:22,400 - werkzeug - WARNING -  * Debugger is active!
+2025-03-19 00:08:22,401 - werkzeug - WARNING -  * Debugger is active!
+2025-03-19 00:08:22,401 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-19 00:08:22,401 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-19 00:08:22,403 - werkzeug - INFO -  * Debugger PIN: 118-799-711
+2025-03-19 00:08:22,403 - werkzeug - INFO -  * Debugger PIN: 118-799-711

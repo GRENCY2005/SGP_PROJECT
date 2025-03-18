@@ -80,15 +80,19 @@ def get_bot_response(message):
     # Convert message to lowercase for easier matching
     message = message.lower()
     
-    # Basic response patterns
+    # DOJ-specific response patterns
     patterns = {
-        r'hello|hi|hey': 'Hello! How can I help you today?',
-        r'how are you': 'I\'m doing well, thank you for asking! How can I assist you?',
-        r'bye|goodbye': 'Goodbye! Have a great day!',
-        r'thank you|thanks': 'You\'re welcome!',
-        r'what can you do|help': 'I can help you with:\n- General information\n- Account verification\n- Basic assistance\nJust ask me anything!',
-        r'verify|verification': 'To verify your account, you need to:\n1. Verify your email\n2. Verify your phone number\nCheck the verification section above for more details.',
-        r'contact|support': 'For support, please email us at support@example.com',
+        r'hello|hi|hey': 'Hello! I\'m the Department of Justice Assistant. How can I help you today?',
+        r'what is doj|what is department of justice': 'The Department of Justice (DOJ) is the federal executive department responsible for enforcing federal laws and administering justice in the United States. It is equivalent to the justice or interior ministries of other countries.',
+        r'what does doj do|what are doj responsibilities': 'The DOJ is responsible for:\n- Enforcing federal laws\n- Representing the U.S. in legal matters\n- Ensuring public safety\n- Protecting civil rights\n- Combating crime and terrorism',
+        r'contact|how to contact|reach out': 'You can contact the Department of Justice through:\n- Main Switchboard: (202) 514-2000\n- TTY: (202) 514-1888\n- Website: www.justice.gov',
+        r'file complaint|report crime|report incident': 'To file a complaint or report a crime:\n1. For civil rights violations: civilrights.justice.gov\n2. For fraud: fraud.ojp.gov\n3. For general crimes: tips.fbi.gov',
+        r'job|career|employment|work at doj': 'For DOJ career opportunities:\n- Visit: www.justice.gov/careers\n- Check USAJobs.gov for current openings\n- Contact the Office of Attorney Recruitment and Management',
+        r'press release|news|updates': 'For DOJ press releases and news:\n- Visit: www.justice.gov/news\n- Subscribe to DOJ newsletters\n- Follow DOJ on social media',
+        r'freedom of information|foia': 'For FOIA requests:\n- Visit: www.justice.gov/oip\n- Submit requests through FOIA.gov\n- Contact the FOIA office at (202) 514-3642',
+        r'help|what can you do': 'I can help you with:\n- General information about DOJ\n- Filing complaints\n- Contact information\n- Career opportunities\n- Press releases and news\n- FOIA requests\nJust ask me anything!',
+        r'thank you|thanks': 'You\'re welcome! Is there anything else I can help you with?',
+        r'bye|goodbye': 'Thank you for contacting the Department of Justice. Have a great day!'
     }
     
     # Check for time-related questions
@@ -105,7 +109,7 @@ def get_bot_response(message):
             return response
     
     # Default response
-    return "I'm not sure how to respond to that. Could you please rephrase your question?"
+    return "I'm not sure about that specific information. Please try asking about DOJ's general responsibilities, filing complaints, contact information, or career opportunities. How else can I help you?"
 
 # Routes
 @app.route('/')

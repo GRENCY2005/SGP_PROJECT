@@ -247,10 +247,53 @@ def chatbot():
     if not current_user.phone_verified:
         flash('Please verify your phone number first')
         return redirect(url_for('dashboard'))
+    
+    # Get current date references
+    today = datetime.now().date()
+    yesterday = today - timedelta(days=1)
+    week_ago = today - timedelta(days=7)
+    
     # Get chat history
-    chat_history = ChatMessage.query.filter_by(user_id=current_user.id).order_by(ChatMessage.timestamp.desc()).limit(10).all()
-    chat_history = reversed(chat_history)  # Show messages in chronological order
-    return render_template('chatbot.html', username=current_user.username, chat_history=chat_history)
+    chat_history = ChatMessage.query.filter_by(user_id=current_user.id).order_by(ChatMessage.timestamp.desc()).all()
+    
+    return render_template('chatbot.html', 
+                         username=current_user.username,
+                         chat_history=chat_history,
+                         today=today,
+                         yesterday=yesterday,
+                         week_ago=week_ago)
+
+@app.route('/load_chat/<int:chat_id>')
+@login_required
+def load_chat(chat_id):
+    # Get the chat and all related messages
+    chat = ChatMessage.query.filter_by(id=chat_id, user_id=current_user.id).first()
+    if not chat:
+        return jsonify({'error': 'Chat not found'}), 404
+        
+    # Get all messages from the same conversation
+    messages = []
+    messages.append({
+        'message': chat.message,
+        'is_user': True
+    })
+    messages.append({
+        'message': chat.response,
+        'is_user': False
+    })
+    
+    return jsonify({'messages': messages})
+
+@app.route('/clear_chat', methods=['POST'])
+@login_required
+def clear_chat():
+    try:
+        # Create a new session ID for the next chat
+        session['chat_session_id'] = f"{current_user.id}_{datetime.now().timestamp()}"
+        return jsonify({'success': True})
+    except Exception as e:
+        logger.error(f'Error clearing chat: {str(e)}')
+        return jsonify({'success': False, 'error': str(e)})
 
 @app.route('/chat', methods=['POST'])
 @login_required

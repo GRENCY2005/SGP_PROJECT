@@ -1,66 +1,388 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat with Flask</title>
+    <title>DOJ Assistant</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f2f5;
+        }
+
+        .chat-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .chat-header {
+            background: #1a73e8;
+            color: white;
+            padding: 15px;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .chat-messages {
+            height: 400px;
+            overflow-y: auto;
+            padding: 20px;
+        }
+
+        .message {
+            margin-bottom: 15px;
+            padding: 10px 15px;
+            border-radius: 15px;
+            max-width: 80%;
+            word-wrap: break-word;
+        }
+
+        .user-message {
+            background-color: #e3f2fd;
+            margin-left: auto;
+            color: #000;
+        }
+
+        .bot-message {
+            background-color: #f5f5f5;
+            margin-right: auto;
+            color: #000;
+        }
+
+        .input-area {
+            padding: 20px;
+            border-top: 1px solid #eee;
+            display: flex;
+            align-items: center;
+        }
+
+        #messageInput {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            margin-right: 10px;
+        }
+
+        .send-button {
+            background: #1a73e8;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .send-button:hover {
+            background: #1557b0;
+        }
+
+        .voice-button {
+            background: none;
+            border: none;
+            color: #1a73e8;
+            margin-right: 10px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        .voice-button:hover {
+            color: #1557b0;
+        }
+
+        .voice-auth-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .voice-auth-box {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+        }
+
+        .voice-auth-button {
+            background: #1a73e8;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 25px;
+            font-size: 18px;
+            margin: 20px 0;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .voice-auth-button:hover {
+            background: #1557b0;
+        }
+
+        .voice-auth-status {
+            margin-top: 15px;
+            font-size: 16px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <!-- Voice Authentication Modal -->
+    <div id="voiceAuthContainer" class="voice-auth-container">
+        <div class="voice-auth-box">
+            <h2>Voice Authentication</h2>
+            <div id="enrollmentSection" style="display: none;">
+                <h3>Voice Enrollment Required</h3>
+                <p>Please speak the following phrase:</p>
+                <h3 id="enrollPhrase" style="color: #1a73e8; margin: 20px 0;">"i want to use chatbot"</h3>
+                <button id="startEnrollButton" class="voice-auth-button">
+                    <i class="fas fa-microphone"></i>
+                    Start Voice Enrollment
+                </button>
+            </div>
+            <div id="verificationSection">
+                <p>Please speak the following phrase:</p>
+                <h3 id="authPhrase" style="color: #1a73e8; margin: 20px 0;">"i want to use chatbot"</h3>
+                <button id="startAuthButton" class="voice-auth-button">
+                    <i class="fas fa-microphone"></i>
+                    Start Voice Authentication
+                </button>
+            </div>
+            <div id="authStatus" class="voice-auth-status">Click the button to begin</div>
+        </div>
+    </div>
+
+    <!-- Main Chat Interface -->
+    <div class="chat-container" style="display: none;" id="chatInterface">
+        <div class="chat-header">
+            <h2>Welcome, {{ username }}!</h2>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            {% for message in chat_history %}
+                <div class="message user-message">{{ message.message }}</div>
+                <div class="message bot-message">{{ message.response }}</div>
+            {% endfor %}
+        </div>
+        <div class="input-area">
+            <button class="voice-button" onclick="startVoiceRecognition()">
+                <i class="fas fa-microphone"></i>
+            </button>
+            <input type="text" id="messageInput" placeholder="Type your message...">
+            <button class="send-button" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-        function handleVoiceInput() {
-            const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+        // Voice Authentication
+        let voiceAuthAttempts = 0;
+        const maxAttempts = 3;
+        const expectedPhrase = "i want to use chatbot";
+        let mediaRecorder;
+        let audioChunks = [];
+
+        function startVoiceRecording(isEnrollment = false) {
+            if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
+                alert('Voice recording is not supported in your browser. Please use Chrome.');
+                return;
+            }
+
+            const authStatus = document.getElementById('authStatus');
+            const button = isEnrollment ? 
+                document.getElementById('startEnrollButton') : 
+                document.getElementById('startAuthButton');
+            
+            navigator.mediaDevices.getUserMedia({ audio: true })
+                .then(stream => {
+                    button.disabled = true;
+                    authStatus.textContent = `Listening... Please speak the ${isEnrollment ? 'enrollment' : 'authentication'} phrase`;
+                    authStatus.style.color = "#666";
+
+                    // Create MediaRecorder instance
+                    mediaRecorder = new MediaRecorder(stream);
+                    audioChunks = [];
+
+                    mediaRecorder.ondataavailable = (event) => {
+                        audioChunks.push(event.data);
+                    };
+
+                    mediaRecorder.onstop = () => {
+                        const audioBlob = new Blob(audioChunks, { type: 'audio/wav' });
+                        const formData = new FormData();
+                        formData.append('audio', audioBlob, 'voice.wav');
+
+                        // Send audio to server
+                        const endpoint = isEnrollment ? '/enroll-voice' : '/verify-voice';
+                        fetch(endpoint, {
+                            method: 'POST',
+                            body: formData
+                        })
+                        .then(response => response.json())
+                        .then(data => {
+                            if (data.success) {
+                                authStatus.textContent = isEnrollment ? 
+                                    "Voice enrolled successfully! Please proceed with authentication." :
+                                    "Authentication successful!";
+                                authStatus.style.color = "green";
+                                
+                                if (isEnrollment) {
+                                    // Switch to verification after successful enrollment
+                                    document.getElementById('enrollmentSection').style.display = 'none';
+                                    document.getElementById('verificationSection').style.display = 'block';
+                                    button.disabled = false;
+                                } else {
+                                    setTimeout(() => {
+                                        document.getElementById('voiceAuthContainer').style.display = 'none';
+                                        document.getElementById('chatInterface').style.display = 'block';
+                                    }, 1000);
+                                }
+                            } else {
+                                if (data.needs_enrollment) {
+                                    // Show enrollment section if needed
+                                    document.getElementById('enrollmentSection').style.display = 'block';
+                                    document.getElementById('verificationSection').style.display = 'none';
+                                } else {
+                                    voiceAuthAttempts++;
+                                    if (voiceAuthAttempts >= maxAttempts) {
+                                        authStatus.textContent = "Maximum attempts reached. Please try again later.";
+                                        authStatus.style.color = "red";
+                                        button.disabled = true;
+                                    } else {
+                                        authStatus.textContent = `${isEnrollment ? 'Enrollment' : 'Authentication'} failed. Please try again. (${voiceAuthAttempts}/${maxAttempts} attempts)`;
+                                        authStatus.style.color = "red";
+                                        button.disabled = false;
+                                    }
+                                }
+                            }
+                        })
+                        .catch(error => {
+                            console.error('Error:', error);
+                            authStatus.textContent = "Error occurred. Please try again.";
+                            authStatus.style.color = "red";
+                            button.disabled = false;
+                        });
+
+                        // Stop all tracks
+                        stream.getTracks().forEach(track => track.stop());
+                    };
+
+                    // Start recording
+                    mediaRecorder.start();
+
+                    // Stop recording after 5 seconds
+                    setTimeout(() => {
+                        if (mediaRecorder.state === 'recording') {
+                            mediaRecorder.stop();
+                        }
+                    }, 5000);
+                })
+                .catch(error => {
+                    console.error('Error accessing microphone:', error);
+                    authStatus.textContent = "Error accessing microphone. Please check permissions.";
+                    authStatus.style.color = "red";
+                    button.disabled = false;
+                });
+        }
+
+        document.getElementById('startEnrollButton').addEventListener('click', () => startVoiceRecording(true));
+        document.getElementById('startAuthButton').addEventListener('click', () => startVoiceRecording(false));
+
+        // Existing chat functionality
+        function sendMessage() {
+            const messageInput = document.getElementById('messageInput');
+            const message = messageInput.value.trim();
+            
+            if (message) {
+                appendMessage(message, true);
+                messageInput.value = '';
+
+                $.ajax({
+                    url: '/chat',
+                    method: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify({ message: message }),
+                    success: function(response) {
+                        appendMessage(response.response, false);
+                    },
+                    error: function(xhr, status, error) {
+                        console.error('Error:', error);
+                        appendMessage('Sorry, there was an error processing your request.', false);
+                    }
+                });
+            }
+        }
+
+        function appendMessage(message, isUser) {
+            const chatMessages = document.getElementById('chatMessages');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${isUser ? 'user-message' : 'bot-message'}`;
+            messageDiv.textContent = message;
+            chatMessages.appendChild(messageDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        function startVoiceRecognition() {
+            if (!('webkitSpeechRecognition' in window)) {
+                alert('Voice recognition is not supported in your browser. Please use Chrome.');
+                return;
+            }
+
+            const recognition = new webkitSpeechRecognition();
+            recognition.continuous = false;
+            recognition.interimResults = false;
             recognition.lang = 'en-US';
 
-            // Update the placeholder text to indicate that the system is listening
-            const queryInput = document.getElementById('query');
-            queryInput.placeholder = "Listening...";
+            recognition.onstart = function() {
+                document.querySelector('.voice-button i').style.color = '#dc3545';
+            };
+
+            recognition.onend = function() {
+                document.querySelector('.voice-button i').style.color = '#1a73e8';
+            };
 
             recognition.onresult = function(event) {
-                const query = event.results[0][0].transcript;
-                queryInput.value = query;
-                queryInput.placeholder = "Enter your query here..."; // Reset placeholder
-                document.getElementById('chat-form').submit();
+                const transcript = event.results[0][0].transcript;
+                document.getElementById('messageInput').value = transcript;
+                sendMessage();
             };
 
             recognition.onerror = function(event) {
                 console.error('Speech recognition error:', event.error);
-                queryInput.placeholder = "Enter your query here..."; // Reset placeholder in case of error
-            };
-
-            recognition.onend = function() {
-                // If the recognition ends without any result
-                if (queryInput.value === "") {
-                    queryInput.placeholder = "Enter your query here...";
-                }
+                document.querySelector('.voice-button i').style.color = '#1a73e8';
             };
 
             recognition.start();
         }
 
-        // Function to scroll chat box to the bottom
-        function scrollToBottom() {
-            var chatBox = document.getElementById("chat-box");
-            chatBox.scrollTop = chatBox.scrollHeight;
-        }
+        // Handle Enter key press
+        document.getElementById('messageInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
 
-        // Call scrollToBottom when the page loads
-        window.onload = scrollToBottom;
+        // Auto-scroll to bottom on page load
+        window.onload = function() {
+            const chatMessages = document.getElementById('chatMessages');
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        };
     </script>
-</head>
-<body>
-    <div class="chat-container">
-        <h2>Chatbot</h2>
-        <div id="chat-box">
-            {% for msg in chat_history %}
-                <div class="{{ msg.type }}">{{ msg.text }}</div>
-            {% endfor %}
-        </div>
-        <form id="chat-form" method="POST">
-            <div></div>
-            <input type="text" id="query" name="query" placeholder="Enter your query here..." autocomplete="on">
-            <i class="fa fa-microphone" style="font-size:24px" onclick="handleVoiceInput()"></i>
-            <button type="submit">Send</button>
-        </form>
-    </div>
 </body>
 </html>
